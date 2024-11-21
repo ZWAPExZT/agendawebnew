@@ -1,0 +1,105 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and font for the whole page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("gtabg1.png");
+
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Container for centering the content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Container styling (with semi-transparent background) */
+
+/* Logo styling */
+.logo {
+    max-width: 150px; /* Adjusts logo size */
+    margin-bottom: 20px; /* Spacing below the logo */
+}
+
+
+/* Style for the heading */
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Style for the paragraph */
+p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Basic button style */
+.button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    background-color: #7289da;  /* Default Discord blue */
+    color: white;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+/* Hover effect */
+.button:hover {
+    background-color: #5e72b4;  /* Slightly darker shade */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/* Active (pressed) effect */
+.button:active {
+    transform: scale(0.95); /* Shrink button on press */
+}
+
+/* Focus effect for accessibility */
+.button:focus {
+    outline: 2px solid #ffcc00; /* Yellow outline when focused */
+}
+
+/* Optional: Add spacing to buttons */
+.button:nth-child(1), .button:nth-child(2) {
+    margin-bottom: 15px;
+}
+
+/* Style for mobile responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    .button {
+        width: 100%;  /* Full-width on mobile */
+        margin: 10px 0;
+    }
+}
+
+

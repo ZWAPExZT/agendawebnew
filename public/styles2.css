@@ -1,0 +1,95 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("gtabg1.png");
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the entire page content */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Heading for the page */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Style for the form container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label styles for each form field */
+label {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Input fields styling */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Focus state for input fields */
+input[type="text"]:focus {
+    border-color: #6c63ff;
+}
+
+/* Button styling */
+.button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Button active state */
+.button:active {
+    transform: scale(0.95);
+}
+
+/* Center the form fields and the button */
+button[type="submit"] {
+    align-self: center;
+}
+
+/* Responsive Design: For smaller screens, adjust padding */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    input[type="text"], .button {
+        font-size: 14px;
+    }
+}
